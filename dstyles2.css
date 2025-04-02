@@ -1,0 +1,130 @@
+/* 🌟 Default styles (Desktop First Approach) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #a9334b;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background: #007BFF;
+}
+
+/* Mobile Navbar */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+/* Content Container */
+.container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+/* Center Title */
+.container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Sponsor Section */
+.sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.sponsor img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.details {
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .sponsor {
+        flex-direction: column;
+justify-content: flex-start;
+        text-align: center;
+margin: 5px 0;
+    }
+
+    .sponsor img {
+
+        margin-bottom: 15px;
+margin-right: 15px;
+    }
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 40px;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Mobile Contact Section */
+@media screen and (max-width: 768px) {
+    .contact {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+
